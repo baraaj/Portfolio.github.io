@@ -4901,7 +4901,7 @@ input, select, textarea {
 .cert-track img {
   min-width: 100%;
   max-width: 100%;
-  height: auto;
+ /* height: auto;*/
   border-radius: 6px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }

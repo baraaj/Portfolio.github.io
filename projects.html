@@ -18,9 +18,10 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-				 <header id="header">
-						<a href="index.html" class="logo">Home</a>
-					</header> 
+					<header id="header">
+						<a href="index.html" class="logo">Baraa Personal Website</a>
+					</header>
+
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -197,6 +198,73 @@
       </div>
     </article>
 
+  <!-- Project 3 -->
+    <article class="project-card">
+   
+	   <div class="cert-slider">
+
+    <div class="cert-track">
+       <img src="images/projet3/sportify.PNG" alt="Project1 App" />
+        <img src="images/projet3/Picture1.PNG" alt="Project Image 1" />
+  <img src="images/projet3/Picture2.PNG" alt="Project Image 2" />
+  <img src="images/projet3/Picture3.PNG" alt="Project Image 3" />
+  <img src="images/projet3/Picture4.PNG" alt="Project Image 4" />
+  <img src="images/projet3/Picture5.PNG" alt="Project Image 5" />
+  <img src="images/projet3/Picture6.PNG" alt="Project Image 6" />
+  <img src="images/projet3/Picture7.PNG" alt="Project Image 7" />
+  <img src="images/projet3/Picture8.PNG" alt="Project Image 8" />
+  <img src="images/projet3/Picture9.PNG" alt="Project Image 9" />
+  <img src="images/projet3/Picture10.PNG" alt="Project Image 10" />
+  <img src="images/projet3/Picture11.PNG" alt="Project Image 11" />
+  <img src="images/projet3/Picture12.PNG" alt="Project Image 12" />
+  <img src="images/projet3/Picture13.PNG" alt="Project Image 13" />
+  <img src="images/projet3/Picture14.PNG" alt="Project Image 14" />
+  <img src="images/projet3/Picture15.PNG" alt="Project Image 15" />
+  <img src="images/projet3/Picture16.PNG" alt="Project Image 16" />
+  <img src="images/projet3/Picture17.PNG" alt="Project Image 17" />
+  <img src="images/projet3/Picture18.PNG" alt="Project Image 18" />
+  <img src="images/projet3/Picture19.PNG" alt="Project Image 19" />
+  <img src="images/projet3/Picture20.PNG" alt="Project Image 20" />
+
+    </div>
+
+    <div class="cert-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+	    <span class="dot"></span>
+		  <span class="dot"></span>
+		    <span class="dot"></span>
+			  <span class="dot"></span>
+			    <span class="dot"></span>
+
+				  <span class="dot"></span>
+			 
+				    <span class="dot"></span>
+					  <span class="dot"></span>
+					    <span class="dot"></span>
+						  <span class="dot"></span>
+						    <span class="dot"></span>	
+							 <span class="dot"></span>
+					  <span class="dot"></span>
+					    
+    </div>
+
+  </div>
+      <div class="project-content">
+        <h3>sportify App</h3>
+        <p>
+         A web application that allows users to manage sports clubs, members, sports news, and events. The platform provides an intuitive interface to organize club activities efficiently, keep members updated, and streamline event management.
+        </p>
+        <span class="tech">React js • Node js • Postman • Git • Docker• Github Actions • CI/CD.   </span>
+        <div class="project-actions">
+          <a href="#" class="button small">View</a>
+        </div>
+      </div>
+    </article>
+
   </div>
 </section>
 
@@ -252,14 +320,18 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 <script>
-  const track = document.querySelector('.cert-track');
-  const dots = document.querySelectorAll('.dot');
+  document.querySelectorAll('.cert-slider').forEach(slider => {
+    const track = slider.querySelector('.cert-track');
+    const dots = slider.querySelectorAll('.dot');
 
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      track.style.transform = `translateX(-${index * 100}%)`;
-      dots.forEach(d => d.classList.remove('active'));
-      dot.classList.add('active');
+    if (!track || dots.length === 0) return;
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(d => d.classList.remove('active'));
+        dot.classList.add('active');
+      });
     });
   });
 </script>
