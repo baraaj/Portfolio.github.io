@@ -2633,7 +2633,7 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
+			display: contents;
 			margin: 4rem 0;
 			width: 100%;
 		}
@@ -2643,7 +2643,7 @@ input, select, textarea {
 			}
 
 			.image.main img {
-				width: 100%;
+				width: 50%;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -2947,7 +2947,18 @@ input, select, textarea {
 		header.major {
 			margin: 0 0 4rem 0;
 			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
+
+			.title-image-row {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 2rem;
+				margin-bottom: 1rem;
+			}
 
 			header.major > :last-child {
 				margin-bottom: 0;
